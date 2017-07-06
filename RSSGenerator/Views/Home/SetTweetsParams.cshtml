@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "SetTweetsParams";
+}
+
+<h2>Введите количество твитов, которое хотите отфильтровать</h2>
+
+@using (Html.BeginForm("RSSGenerator", "Home"))
+{
+    @Html.TextBox("numberOfTweets")
+    <button type="submit">Сгенерировать rss-ленту</button>
+}
